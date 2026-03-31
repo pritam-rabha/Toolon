@@ -41,20 +41,20 @@ public class Toolon extends JFrame {
         projectPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
 
-        JButton btnClock = new JButton("⏰Analog Clock");
-        JButton btnCalc = new JButton("🧮Calculator");
-        JButton btnContact = new JButton("📇Contact Book");
-        JButton btnCurrency = new JButton("💱Currency Converter");
+        JButton btnClock = new JButton("Analog Clock");
+        JButton btnCalc = new JButton("Calculator");
+        JButton btnContact = new JButton("Contact Book");
+        JButton btnCurrency = new JButton("Currency Converter");
         JButton btnDClock = new JButton("Digital Clock");
         JButton btnGame = new JButton("Guess Game");
         JButton btnViewer = new JButton("Image Viewer");
-        JButton btnLogin = new JButton("🔐Login System");
-        JButton btnNotepad = new JButton("📝Notepad");
-        JButton btnPizza = new JButton("🍕Pizza Billing");
-        JButton btnQuiz = new JButton("🧠Quiz App");
+        JButton btnLogin = new JButton("Login System");
+        JButton btnNotepad = new JButton("Notepad");
+        JButton btnPizza = new JButton("Pizza Billing");
+        JButton btnQuiz = new JButton("Quiz App");
         JButton btnStopwatch = new JButton("Stopwatch");
         JButton btnTemp = new JButton("Temperature Converter");
-        JButton btnTic = new JButton("❌Tic Tac Toe");
+        JButton btnTic = new JButton("Tic Tac Toe");
         JButton btnTodo = new JButton("To-Do List");
 
 
