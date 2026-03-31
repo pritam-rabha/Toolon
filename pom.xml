@@ -8,7 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
-        <exec.mainClass>com.mycompany.dashboard.Dashboard</exec.mainClass>
+        <exec.mainClass>com.mycompany.dashboard.Toolon</exec.mainClass>
     </properties>
     <name>Toolon</name>
 </project>

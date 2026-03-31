@@ -3,13 +3,13 @@ package com.mycompany.dashboard;
 import javax.swing.*;
 import java.awt.*;
 
-public class Dashboard extends JFrame {
+public class Toolon extends JFrame {
 
     CardLayout cardLayout;
     JPanel mainPanel;
     JPanel sidebar;
 
-    public Dashboard() {
+    public Toolon() {
 
         setTitle("Toolon");
         setSize(1000, 600);
@@ -200,6 +200,6 @@ public class Dashboard extends JFrame {
     }
 
     public static void main(String[] args) {
-        new Dashboard().setVisible(true);
+        new Toolon().setVisible(true);
     }
 }
