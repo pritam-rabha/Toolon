@@ -34,7 +34,7 @@ public class AnalogClock extends JPanel {
         int centerY = height / 2;
         int radius = Math.min(width, height) / 2 - 20;
 
-        // Background circle
+    
         g2.setColor(Color.WHITE);
         g2.fillOval(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 
@@ -42,7 +42,7 @@ public class AnalogClock extends JPanel {
         g2.setStroke(new BasicStroke(3));
         g2.drawOval(centerX - radius, centerY - radius, 2 * radius, 2 * radius);
 
-        // Draw numbers (1–12)
+   
         g2.setFont(new Font("Segoe UI", Font.BOLD, 20));
         for (int i = 1; i <= 12; i++) {
             double angle = Math.toRadians(i * 30 - 90);
@@ -57,7 +57,7 @@ public class AnalogClock extends JPanel {
             g2.drawString(num, x - w / 2, y + h / 2);
         }
 
-        // Tick marks
+   
         for (int i = 0; i < 60; i++) {
             double angle = Math.toRadians(i * 6 - 90);
 
@@ -74,7 +74,7 @@ public class AnalogClock extends JPanel {
             g2.drawLine(x1, y1, x2, y2);
         }
 
-        // Time
+   
         Calendar cal = Calendar.getInstance();
 
         int sec = cal.get(Calendar.SECOND);
@@ -85,16 +85,15 @@ public class AnalogClock extends JPanel {
         double minAngle = Math.toRadians(min * 6 + sec * 0.1 - 90);
         double hrAngle = Math.toRadians(hr * 30 + min * 0.5 - 90);
 
-        // Hour hand
+     
         drawHand(g2, centerX, centerY, hrAngle, radius - 80, 6, Color.BLACK);
 
-        // Minute hand
         drawHand(g2, centerX, centerY, minAngle, radius - 50, 4, Color.BLACK);
 
-        // Second hand (red)
+   
         drawHand(g2, centerX, centerY, secAngle, radius - 30, 2, Color.RED);
 
-        // Center dot
+
         g2.setColor(Color.RED);
         g2.fillOval(centerX - 5, centerY - 5, 10, 10);
     }

@@ -82,19 +82,16 @@ public class BasicCalculator extends JPanel implements ActionListener {
 
         String cmd = e.getActionCommand();
 
-        // Numbers & dot
         if ("0123456789.".contains(cmd)) {
             display.setText(display.getText() + cmd);
         }
 
-        // Clear
+ 
         else if (cmd.equals("AC")) {
             display.setText("");
             num1 = num2 = 0;
             operator = ' ';
         }
-
-        // Equals
         else if (cmd.equals("=")) {
             if (display.getText().isEmpty()) return;
 
@@ -114,7 +111,7 @@ public class BasicCalculator extends JPanel implements ActionListener {
             }
         }
 
-        // Operators
+ 
         else {
             if (display.getText().isEmpty()) return;
 
@@ -131,13 +128,11 @@ public class BasicCalculator extends JPanel implements ActionListener {
             display.setText("");
         }
 
-        // Percentage
         if (cmd.equals("%")) {
             double value = Double.parseDouble(display.getText());
             display.setText("" + (value / 100));
         }
 
-        // +/- toggle
         if (cmd.equals("+/-")) {
             if (!display.getText().isEmpty()) {
                 double value = Double.parseDouble(display.getText());
